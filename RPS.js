@@ -1,4 +1,11 @@
 function whoWon(player1,player2){
+  if (player1 !== 'rock' && player1 !== 'paper' && player1 !== 'scissors') {
+    return 'Invalid input.  Please try again.';
+  };
+
+if (player2 !== 'rock' && player2 !== 'paper' && player2 !== 'scissors') {
+    return 'Invalid input.  Please try again.';
+  };
 
   if (player1 === player2){
     return 'TIE!';
