@@ -10,4 +10,14 @@ describe("whoWon", function() {
     const output = whoWon('rock', 'paper');
     expect(output).toEqual('Player 2 wins!');
   });
+
+  it("should return 'Player 2 wins!' if argument are paper, scissors", function() {
+    const output = whoWon('paper', 'scissors');
+    expect(output).toEqual('Player 2 wins!');
+  });
+
+  it("should return 'Player 2 wins!' if arguments are scissors, rock", function() {
+    const output = whoWon('scissors', 'rock');
+    expect(output).toEqual('Player 2 wins!');
+  });
 });
